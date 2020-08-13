@@ -7,8 +7,8 @@ def find_even_values(src)
 
   for i in 0..(src.count) do
     index = 0
-    while index < src[i] do
-      binding.pry
+    while index < src[i].count do
+      #binding.pry
       if src[i][index] % 2 == 0 
         puts src[i][index]
       end
