@@ -1,3 +1,5 @@
+require 'pry'
+
 def find_even_values(src)
   # Given an Array of Arrays of Integers ( [ [10, 11], [99, 50, 3, 4], [23, 41] ] ):
   #
@@ -6,6 +8,7 @@ def find_even_values(src)
   for i in 0..(src.count) do
     index = 0
     while index < src[i] do
+      binding.pry
       if src[i][index] % 2 == 0 
         puts src[i][index]
       end
